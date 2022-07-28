@@ -12,9 +12,9 @@ Install Latest Version of (Azure)PowerShell on Windows
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
 
 Install PowerShell Get :
-
 Install-Module -Name PowerShellGet
-Install a module only for the current user
+
+Install a module only for the current user :
 Install-Module -Name PowerShellGet -Scope CurrentUser
 
 Note : Install-Module downloads and installs the newest version of PowerShellGet into the current user's directory, $home\Documents\PowerShell\Modules.
