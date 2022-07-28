@@ -11,6 +11,8 @@ Install Latest Version of (Azure)PowerShell on Windows
 
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
 
+To check the PowerShell version : $PSVersionTable.PSVersion
+
 Install PowerShell Get :
 Install-Module -Name PowerShellGet
 
@@ -21,56 +23,29 @@ Note : Install-Module downloads and installs the newest version of PowerShellGet
 
 Get-InstalledModule -Name Az -AllVersions
 
-Get the Azure Subscription
+Connect Az Account : Connect-AzAccount
 
-Get-AzSubscription
+Get the Azure Subscription : Get-AzSubscription
+Get the AZ Tenant(Get the list of all the Tenants)  :Get-AzTenant
 
-Get all installed modules
+Get all installed modules : Get-InstalledModule
 
-Get-InstalledModule
+Gets PowerShell repositories :Get-PSRepository
 
+PowerShell Get :Get-Module -Name PowerShellGet
 
+Get Context (Explains about the current logged in Tenant) : Get-AzContext
 
-Gets PowerShell repositories
+Get Context (Explains about the Multiple Tenants) : Get-AzContext -ListAvailable
 
-Get-PSRepository
+Get-AzAccessToken(JWT) : Get-AzAccessToken
 
-PowerShell Get
+Find a module by name : Find-Module -Name PowerShellGet
 
-Get-Module -Name PowerShellGet
+Find modules with similar names : Find-Module -Name PowerShell*
 
+Find a module in a specific repository : Find-Module -Name PowerShellGet -Repository PSGallery
 
-Get the AZ Tenant : Get the list of all the Tenants
-
-Get-AzTenant
-
-Get Context  : Explains about the current logged in Tenant
-
-Get-AzContext
-
-Get Context  : Explains about the Multiple Tenants
-
-Get-AzContext -ListAvailable
-
-Get-AzAccessToken
-
-Get-AzAccessToken
-Find a module by name
-
-Find-Module -Name PowerShellGet
-
-Find modules with similar names
-Find-Module -Name PowerShell*
-Find a module in a specific repository
-
-Find-Module -Name PowerShellGet -Repository PSGallery
-
-
-
-
-To check your PowerShell version
-
-$PSVersionTable.PSVersion
 
 Sign in to another Cloud
 
