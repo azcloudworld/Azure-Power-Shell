@@ -6,7 +6,8 @@ Az PowerShell module is the recommended PowerShell module for managing Azure res
 
 Az PowerShell module is based on the .NET Standard, and works with PowerShell 7.0.6 LTS and PowerShell 7.1.3 or higher on all platforms including Windows, macOS, and Linux. It's also compatible with Windows PowerShell 5.1.
 
-Install Azure PowerShell:
+Install Azure PowerShell: 
+Install Latest Version of (Azure)PowerShell on Windows
 
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
 
